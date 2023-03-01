@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Song</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body style="background-color: rgb(0, 0, 0);">
+        <div class="NavBar">
+            <h3>vmx Lyrics</h3>
+        </div>
+
+        <div class="Box">
+            <div class="Form">
+                <form action="{{ url_for('search')}}" method="POST">
+                    <input placeholder="artist or group.." type="text" name="artist"> 
+                    <input type="text" name="music" placeholder="song name">
+                    <input type="submit" id="button" value="buscar">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="Lyric">
+            <h1>{{music}}</h1>
+            <p>{{song}}</p>
+        </div>
+        <!-- <footer>
+            <div class="footer-content">
+              <p>
+                Copyright &copy; 2023, v0ltmx
+              </p>
+            </div> 
+          </footer> -->
+    </body>
+
+    
+  
+
+</html>
